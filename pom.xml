@@ -3,4 +3,13 @@
   <groupId>com.qa.account</groupId>
   <artifactId>account-project</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+
+<dependencies>
+<dependency>
+    <groupId>org.json</groupId>
+    <artifactId>json</artifactId>
+    <version>20180130</version>
+</dependency>
+</dependencies>
+
 </project>
