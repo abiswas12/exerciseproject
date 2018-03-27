@@ -2,6 +2,8 @@ package accountsproject;
 
 import java.util.*;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 public class service {
 	private HashMap<Integer,account> acc;
 	private int count;
@@ -20,5 +22,13 @@ public class service {
 	public account retrieveAccount(int key)
 	{
 		return acc.get(key);
+	}
+	public String translateAccount() throws Exception {
+		
+		ObjectMapper mapper = new ObjectMapper();
+		String jsonFromMap = mapper.writeValueAsString(acc);
+		System.out.println(jsonFromMap);
+		
+		return jsonFromMap;
 	}
 }
