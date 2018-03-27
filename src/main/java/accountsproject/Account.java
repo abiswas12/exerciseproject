@@ -1,10 +1,10 @@
 package accountsproject;
 
-public class account {
+public class Account {
 	private String firstname;
 	private String secondname;
 	private String AccountNo;
-	public account(String firstN,String secondN,String AccN) {
+	public Account(String firstN,String secondN,String AccN) {
 		this.setFirstname(firstN);
 		this.setSecondname(secondN);
 		this.setAccountNo(AccN);

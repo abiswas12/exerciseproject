@@ -2,13 +2,13 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import accountsproject.service;
+import accountsproject.Service;
 
-public class servicetest {
+public class Servicetest {
 
 	@Test
 	public void test() throws Exception {
-        service service = new service();
+        Service service = new Service();
         String jsonconvert = "{\"0\":{\"firstname\":\"Matt\",\"secondname\":\"Moore\",\"accountNo\":\"0\"},\"1\":{\"firstname\":\"Nick\",\"secondname\":\"Watton\",\"accountNo\":\"1\"},\"2\":{\"firstname\":\"Anirban\",\"secondname\":\"Biswas\",\"accountNo\":\"2\"},\"3\":{\"firstname\":\"Andrew\",\"secondname\":\"McGill\",\"accountNo\":\"3\"}}";
 		String jsonmap;
         
