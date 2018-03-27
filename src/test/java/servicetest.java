@@ -9,7 +9,7 @@ public class servicetest {
 	@Test
 	public void test() throws Exception {
         service service = new service();
-        String jsonconvert = "{\"0\":{\"accountNumber\":0,\"lastName\":\"Moore\",\"firstName\":\"Matt\"},\"1\":{\"accountNumber\":1,\"lastName\":\"Watton\",\"firstName\":\"Nick\"},\"2\":{\"accountNumber\":2,\"lastName\":\"Biswas\",\"firstName\":\"Anirban\"},\"3\":{\"accountNumber\":3,\"lastName\":\"McGill\",\"firstName\":\"Andrew\"}}";
+        String jsonconvert = "{\"0\":{\"firstname\":\"Matt\",\"secondname\":\"Moore\",\"accountNo\":\"0\"},\"1\":{\"firstname\":\"Nick\",\"secondname\":\"Watton\",\"accountNo\":\"1\"},\"2\":{\"firstname\":\"Anirban\",\"secondname\":\"Biswas\",\"accountNo\":\"2\"},\"3\":{\"firstname\":\"Andrew\",\"secondname\":\"McGill\",\"accountNo\":\"3\"}}";
 		String jsonmap;
         
 		service.addAcc("Matt", "Moore", "0");
