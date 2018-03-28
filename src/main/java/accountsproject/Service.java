@@ -31,8 +31,18 @@ public class Service {
 		
 		ObjectMapper mapper = new ObjectMapper();
 		String jsonFromMap = mapper.writeValueAsString(acc);
-		System.out.println(jsonFromMap);
+		//System.out.println(jsonFromMap);
 		
 		return jsonFromMap;
+	}
+
+	public int countAccount(String rptdFistN) {
+		int j =0;
+		Account accholder;
+		for (int i=0;i<acc.size();i++) {
+			accholder = acc.get(i);
+			if (accholder.getFirstname().equals(rptdFistN)) j++;
+		}
+		return j;
 	}
 }
