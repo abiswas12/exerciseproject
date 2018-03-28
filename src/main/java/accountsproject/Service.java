@@ -36,13 +36,13 @@ public class Service {
 		return jsonFromMap;
 	}
 
-	public int countAccount(String rptdFistN) {
-		int namecount =0;
-		Account accholder;
-		for (int i=0;i<acc.size();i++) {
-			accholder = acc.get(i);
-			if (accholder.getFirstname().equals(rptdFistN)) namecount++;
+	public int countAccount(String repeatedFirstName) {
+		int countName = 0;
+		for (Account account : acc.values()) {
+			if (account.getFirstname().equals(repeatedFirstName)) {
+				countName++;
+			}
 		}
-		return namecount;
+		return countName;
 	}
 }

@@ -40,17 +40,18 @@ public class Servicetest {
 	
 	@Test
 	public void test2() {
-		String rptdFistN = "Anirban";
-		String rptdSecondN = "Biswas";
+		String repeatedFirstName = "Anirban";
+		String repeatedSecondName = "Biswas";
 		service.addAcc("Matt", "Moore", "0");
 		service.addAcc("Nick", "Watton", "1");
-		service.addAcc(rptdFistN, rptdSecondN, "2");
+		service.addAcc(repeatedFirstName, repeatedSecondName, "2");
 		service.addAcc("Andrew", "McGill", "3");
-		service.addAcc(rptdFistN, rptdSecondN, "4");
-		service.addAcc(rptdFistN, rptdSecondN, "5");
-		service.addAcc(rptdFistN, rptdSecondN, "6");
-		int numbcheck = service.countAccount(rptdFistN);
+		service.addAcc(repeatedFirstName, repeatedSecondName, "4");
+		service.addAcc(repeatedFirstName, repeatedSecondName, "5");
+		service.addAcc(repeatedFirstName, repeatedSecondName, "6");
+		int numbcheck = service.countAccount(repeatedFirstName);
 		assertEquals(4, numbcheck);
 	}
+	
 
 }
