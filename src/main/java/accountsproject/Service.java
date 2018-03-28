@@ -37,12 +37,12 @@ public class Service {
 	}
 
 	public int countAccount(String rptdFistN) {
-		int j =0;
+		int namecount =0;
 		Account accholder;
 		for (int i=0;i<acc.size();i++) {
 			accholder = acc.get(i);
-			if (accholder.getFirstname().equals(rptdFistN)) j++;
+			if (accholder.getFirstname().equals(rptdFistN)) namecount++;
 		}
-		return j;
+		return namecount;
 	}
 }
